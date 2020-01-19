@@ -145,5 +145,19 @@ h6 {
 
 .share-article{
   text-decoration: none !important;
+}
 
+ul.list-group li a, ul.list-group li a:visited {
+  text-decoration: none !important;
+  color: #000000 !important;
+}
+
+ul.list-group li a:hover, ul.list-group li a:active {
+  text-decoration: none !important;
+  color: #000000 !important;
+}
+
+ul.list-group li.active a {
+  text-decoration: none !important;
+  color: #000000 !important;
 }
