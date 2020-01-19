@@ -1,0 +1,283 @@
+/* stylelint-disable selector-list-comma-newline-after */
+
+.blog-header {
+  line-height: 1;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 2.25rem;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+.display-4 {
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 3rem;
+  }
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-scroller .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+}
+
+.card-img-right {
+  height: 100%;
+  border-radius: 0 3px 3px 0;
+}
+
+.flex-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.h-250 { height: 250px; }
+@media (min-width: 768px) {
+  .h-md-250 { height: 250px; }
+}
+
+/* Pagination */
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+.blog-pagination > .btn {
+  border-radius: 2rem;
+}
+
+/*
+ * Blog posts
+ */
+.blog-post {
+  margin-bottom: 4rem;
+}
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #999;
+}
+
+/*
+ * Footer
+ */
+.blog-footer {
+  padding: 2.5rem 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+/*.carousel-item {
+  max-height: 300px;
+}*/
+
+/*@media (max-width: 688px) {
+    .carousel-item>img {
+        max-height: 200px;
+    }
+}*/
+
+.carousel-item .img-fluid {
+  width: 100%;
+  height: 100%;
+
+}
+
+/*.img-fluid {
+    max-width: 100%;
+    height: auto;
+}*/
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+.card-img{
+  height :250px;
+}
+
+aside{
+	background:#fcfcfc;
+	padding:20px 15px 0 15px;
+	margin: 0 0 30px 0;
+  border: 1px solid #e6e6e6;
+  -webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.03);
+  -moz-box-shadow: 0 2px 0 rgba(0,0,0,0.03);
+  box-shadow: 0 2px 0 rgba(0,0,0,0.03);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+aside .widget{
+	margin-bottom:30px;
+}
+
+
+aside .widget ul {
+	list-style:none;
+	margin-left:0;
+}
+
+aside .widget ul li {
+	border-bottom:1px dotted #efefef;
+	margin:15px 0 0 0;
+	padding-bottom:5px;
+}
+
+aside .widget h4{
+	border-bottom:1px solid #e5e5e5;
+	padding-bottom:10px;
+	margin-bottom:15px;
+}
+
+/* categories */
+aside .widget ul.cat {
+	list-style:none;
+	margin-left:0;
+}
+aside .widget ul.cat li {
+	padding-left:24px;
+  background-image: url("../img/glyphicons-halflings.png");
+  background-repeat: no-repeat;
+	background-position: -456px -69px;
+}
+aside .widget ul.cat li a {
+	color:#444;
+}
+aside .widget ul.cat li a:hover {
+	text-decoration:none;
+}
+
+/* recent posts */
+
+aside .widget ul.recent-posts li {
+	overflow:hidden;
+	display:inline-block;
+
+}
+
+aside .widget ul.recent-posts li a{
+	color:#444;
+	text-align:left;
+	font-weight:600;
+
+}
+
+aside .widget ul.recent-posts li a:hover {
+	text-decoration:none;
+}
+
+aside .widget ul.recent-posts li span.date {
+	float:left;
+	font-size:11px;
+	margin-top:10px;
+
+}
+
+aside .widget ul.recent-posts li span.comment {
+	float:left;
+	margin-left:20px;
+	font-size:11px;
+	margin-top:10px;
+}
+
+/* tags */
+aside .widget ul.tags li {
+	display:inline;
+	border:none;
+}
+
+aside .widget ul.tags li a {
+	margin-bottom:10px;
+	border:none;
+	color:#fff;
+}
