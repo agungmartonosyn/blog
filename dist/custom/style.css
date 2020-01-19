@@ -98,8 +98,8 @@ h6 {
 }
 
 .img-card {
-  width: 253px;
-  height: 215px;
+  width: auto;
+  height: auto;
 }
 
 .card-img-post {
